@@ -1,9 +1,19 @@
 const ROOTS = {
   AUTH: '/auth',
   DASHBOARD: '/dashboard',
+  ERROR: '/error',
 };
 
 export const paths = {
+  // ERROR
+  error: {
+    400: `${ROOTS.ERROR}/400`,
+    401: `${ROOTS.ERROR}/401`,
+    403: `${ROOTS.ERROR}/403`,
+    403: `${ROOTS.ERROR}/403`,
+    500: `${ROOTS.ERROR}/500`,
+  },
+
   // AUTH
   auth: {
     login: `${ROOTS.AUTH}/login`,
